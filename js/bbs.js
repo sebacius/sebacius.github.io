@@ -241,9 +241,10 @@ let's talk.
 
 <div class="text-bbs-yellow mb-2">Navigation</div>
 <div class="text-bbs-text ml-4 mb-4">
-  <span class="text-bbs-green">[↑][↓]</span> Move through menu items<br>
-  <span class="text-bbs-green">[Enter]</span> Select current item<br>
-  <span class="text-bbs-green">[A-Z]</span> Jump to section by hotkey
+  <span class="hidden md:inline"><span class="text-bbs-green">[↑][↓]</span> Move through menu items<br></span>
+  <span class="hidden md:inline"><span class="text-bbs-green">[Enter]</span> Select current item<br></span>
+  <span class="hidden md:inline"><span class="text-bbs-green">[A-Z]</span> Jump to section by hotkey<br></span>
+  <span class="md:hidden">Tap menu items to navigate</span>
 </div>
 
 <div class="text-bbs-yellow mb-2">Available Sections</div>
@@ -293,6 +294,7 @@ Built with vanilla JavaScript and Tailwind CSS.
     { text: 'Establishing secure connection...', delay: 2000, class: 'text-cyan-400' },
     { text: 'Connected to Sebastian Sastre\'s BBS', delay: 2500, class: 'text-yellow-400' },
     { text: '', delay: 2800 },
+    { text: 'Press Enter or tap to continue...', delay: 3200, class: 'text-gray-500 blink' },
   ];
 
   async function playConnectionSequence() {
@@ -333,7 +335,17 @@ Built with vanilla JavaScript and Tailwind CSS.
     }
 
     if (!skipped) {
-      await sleep(800);
+      // Wait for user to press enter/click/tap to continue
+      await new Promise(resolve => {
+        const continueHandler = (e) => {
+          if (e.type === 'keydown' && e.key !== 'Enter') return;
+          document.removeEventListener('keydown', continueHandler);
+          document.removeEventListener('click', continueHandler);
+          resolve();
+        };
+        document.addEventListener('keydown', continueHandler);
+        document.addEventListener('click', continueHandler);
+      });
     }
 
     sessionStorage.setItem('bbs-connected', 'true');
