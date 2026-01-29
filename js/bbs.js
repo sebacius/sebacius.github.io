@@ -104,10 +104,6 @@ and helped build what comes next.
 `,
 
     experience: `
-<div class="text-bbs-muted text-xs mb-4">
-  <a href="https://en.wikipedia.org/wiki/Pcap" target="_blank" class="hover:text-bbs-cyan">PCAP: Packet Capture</a> — where the real story lives
-</div>
-
 <div class="mb-6">
   <div class="text-bbs-yellow font-bold">Principal / Staff VoIP Engineer</div>
   <div class="text-bbs-cyan">Weave</div>
