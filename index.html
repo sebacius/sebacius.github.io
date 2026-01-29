@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Sebastian Sastre - VoIP Engineer</title>
+    <meta name="title" content="Sebastian Sastre - VoIP Engineer" />
+    <meta name="description" content="VoIP Engineer with 20+ years building scalable telecom systems. Kamailio, FreeSWITCH, SIP, WebRTC, Kubernetes." />
+    <meta name="keywords" content="VoIP, SIP, Kamailio, FreeSWITCH, WebRTC, telecom, voice engineer, cloud native" />
+    <meta name="author" content="Sebastian Sastre" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sebastiansastre.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sebastiansastre.com/" />
+    <meta property="og:title" content="Sebastian Sastre - VoIP Engineer" />
+    <meta property="og:description" content="VoIP Engineer with 20+ years building scalable telecom systems." />
+    <meta property="og:image" content="https://sebastiansastre.com/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sebastian Sastre - VoIP Engineer" />
+    <meta name="twitter:description" content="VoIP Engineer with 20+ years building scalable telecom systems." />
+    <meta name="twitter:image" content="https://sebastiansastre.com/og-image.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sebastian Sastre",
+      "jobTitle": "VoIP Engineer",
+      "url": "https://sebastiansastre.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/sebastian-sastre/",
+        "https://github.com/sebacius"
+      ],
+      "knowsAbout": ["VoIP", "Kamailio", "FreeSWITCH", "SIP", "WebRTC", "Kubernetes", "Go"]
+    }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0c0c18" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+            },
+            colors: {
+              bbs: {
+                bg: '#0c0c18',
+                surface: '#12121f',
+                border: '#3b82f6',
+                text: '#e2e8f0',
+                muted: '#64748b',
+                cyan: '#22d3ee',
+                yellow: '#facc15',
+                green: '#4ade80',
+                highlightText: '#0c0c18',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <style>
+      * { box-sizing: border-box; }
+
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        font-family: 'JetBrains Mono', monospace;
+      }
+
+      /* BBS Box styling */
+      .bbs-box {
+        border: 2px solid #3b82f6;
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+      }
+
+      .bbs-box-header {
+        border-bottom: 2px solid #3b82f6;
+      }
+
+      /* Menu item styles */
+      .menu-item {
+        transition: none;
+      }
+
+      .menu-item.selected {
+        background: #22d3ee;
+        color: #0c0c18;
+      }
+
+      .menu-item.selected .hotkey {
+        color: #0c0c18;
+        font-weight: bold;
+      }
+
+      /* Scanlines */
+      .scanlines {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.1) 0px,
+          rgba(0, 0, 0, 0.1) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+        z-index: 1000;
+        opacity: 0.3;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #12121f; }
+      ::-webkit-scrollbar-thumb { background: #3b82f6; }
+
+      /* Selection */
+      ::selection {
+        background: #22d3ee;
+        color: #0c0c18;
+      }
+
+      /* Mobile/Tablet Responsive */
+      @media (max-width: 768px) {
+        html, body {
+          overflow: auto;
+        }
+
+        #bbs-main {
+          height: auto;
+          min-height: 100vh;
+          max-height: none !important;
+        }
+      }
+
+      /* ASCII banner - hide on very small screens */
+      @media (max-width: 480px) {
+        .ascii-banner {
+          display: none;
+        }
+
+        .mobile-title {
+          display: block;
+        }
+      }
+
+      @media (min-width: 481px) {
+        .mobile-title {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-bbs-bg text-bbs-text">
+    <!-- Scanlines overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Connection Screen -->
+    <div id="connect-screen" class="fixed inset-0 bg-black z-50 flex items-center justify-center cursor-pointer">
+      <div id="connect-text" class="text-gray-400 whitespace-pre font-mono text-sm"></div>
+    </div>
+
+    <!-- Main BBS Container -->
+    <div id="bbs-main" class="h-screen flex flex-col p-4 max-w-5xl mx-auto" style="display: none; max-height: 1200px;">
+
+      <!-- Header Box -->
+      <div class="bbs-box bg-bbs-surface overflow-hidden">
+        <div class="bbs-box-header px-4 py-2 flex flex-col sm:flex-row sm:justify-between items-center gap-1">
+          <span class="text-bbs-cyan font-bold">Sebastian Sastre's BBS</span>
+          <span class="text-bbs-muted text-sm">Node 1 of 4</span>
+        </div>
+        <div class="p-4 text-center">
+          <div class="ascii-banner flex flex-col lg:flex-row justify-center items-center gap-1 lg:gap-2">
+            <pre class="text-bbs-cyan text-[10px] sm:text-xs lg:text-sm leading-tight text-left"> ____       _               _   _
+/ ___|  ___| |__   __ _ ___| |_(_) __ _ _ __
+\___ \ / _ \ '_ \ / _` / __| __| |/ _` | '_ \
+ ___) |  __/ |_) | (_| \__ \ |_| | (_| | | | |
+|____/ \___|_.__/ \__,_|___/\__|_|\__,_|_| |_|</pre>
+            <pre class="text-bbs-cyan text-[10px] sm:text-xs lg:text-sm leading-tight text-left"> ____            _
+/ ___|  __ _ ___| |_ _ __ ___
+\___ \ / _` / __| __| '__/ _ \
+ ___) | (_| \__ \ |_| | |  __/
+|____/ \__,_|___/\__|_|  \___|</pre>
+          </div>
+          <div class="mobile-title text-bbs-cyan text-xl font-bold mb-2">Sebastian Sastre</div>
+          <div class="mt-2 flex flex-wrap justify-center gap-x-2 gap-y-1">
+            <span class="text-bbs-yellow font-bold">VoIP Engineer</span>
+            <span class="text-bbs-muted hidden sm:inline">|</span>
+            <span class="text-bbs-green">20+ Years Experience</span>
+            <span class="text-bbs-muted hidden md:inline">|</span>
+            <span class="text-bbs-text hidden md:inline">Kamailio, FreeSWITCH, Go, K8s</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="flex-1 flex flex-col md:flex-row gap-4 mt-4 min-h-0">
+
+        <!-- Menu Box -->
+        <div class="bbs-box bg-bbs-surface w-full md:w-64 flex-shrink-0 flex flex-col">
+          <div class="bbs-box-header px-4 py-2">
+            <span class="text-bbs-green font-bold">Main Menu</span>
+          </div>
+          <div id="menu-items" class="p-2">
+            <!-- Menu items rendered by JS -->
+          </div>
+          <div class="mt-auto border-t-2 border-bbs-border px-4 py-2 text-xs text-bbs-muted hidden md:block">
+            <span class="text-bbs-yellow">[↑↓]</span> Navigate
+            <span class="text-bbs-yellow ml-2">[Enter]</span> Select
+          </div>
+        </div>
+
+        <!-- Content Box -->
+        <div class="bbs-box bg-bbs-surface flex-1 flex flex-col min-w-0">
+          <div class="bbs-box-header px-4 py-2">
+            <span id="section-title" class="text-bbs-yellow font-bold">Welcome</span>
+          </div>
+          <div id="content-area" class="flex-1 p-4 overflow-y-auto min-h-[300px] md:min-h-0">
+            <!-- Content rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="bbs-box bg-bbs-cyan text-bbs-highlightText mt-4 px-3 md:px-4 py-2 flex flex-wrap justify-center md:justify-between gap-x-4 gap-y-1 text-xs md:text-sm font-bold">
+        <span>Time: <span id="status-time">60:00</span></span>
+        <span class="hidden sm:inline">Caller: #<span id="caller-num">1337</span></span>
+        <span>↑<span id="bytes-up">0</span> ↓<span id="bytes-down">0</span></span>
+        <span id="status-section">About</span>
+        <span class="hidden md:inline">Sysop: Sebastian</span>
+        <span class="hidden lg:inline">28.8k baud</span>
+      </div>
+    </div>
+
+    <script src="/js/bbs.js"></script>
+  </body>
+</html>
