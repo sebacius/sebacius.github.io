@@ -240,10 +240,11 @@
 
         <!-- Menu Box -->
         <div class="bbs-box bg-bbs-surface w-full md:w-64 flex-shrink-0 flex flex-col">
-          <div class="bbs-box-header px-4 py-2">
+          <div id="menu-toggle" class="bbs-box-header px-4 py-2 flex justify-between items-center cursor-pointer md:cursor-default">
             <span class="text-bbs-green font-bold">Main Menu</span>
+            <span class="text-bbs-yellow md:hidden" id="menu-arrow">▼</span>
           </div>
-          <div id="menu-items" class="p-2">
+          <div id="menu-items" class="p-2 hidden md:block">
             <!-- Menu items rendered by JS -->
           </div>
           <div class="mt-auto border-t-2 border-bbs-border px-4 py-2 text-xs text-bbs-muted hidden md:block">

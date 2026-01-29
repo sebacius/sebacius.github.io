@@ -376,6 +376,7 @@ Built with vanilla JavaScript and Tailwind CSS.
         selectedIndex = index;
         renderMenu();
         showSection(item.section);
+        closeMobileMenu();
       });
       container.appendChild(div);
     });
@@ -495,6 +496,8 @@ Built with vanilla JavaScript and Tailwind CSS.
     elements.callerNum = document.getElementById('caller-num');
     elements.bytesUp = document.getElementById('bytes-up');
     elements.bytesDown = document.getElementById('bytes-down');
+    elements.menuToggle = document.getElementById('menu-toggle');
+    elements.menuArrow = document.getElementById('menu-arrow');
 
     // Random caller number
     elements.callerNum.textContent = Math.floor(Math.random() * 9000 + 1000);
@@ -508,8 +511,32 @@ Built with vanilla JavaScript and Tailwind CSS.
     // Keyboard handler
     document.addEventListener('keydown', handleKeyDown);
 
+    // Mobile menu toggle
+    elements.menuToggle.addEventListener('click', toggleMobileMenu);
+
     // Play connection sequence
     playConnectionSequence();
+  }
+
+  function toggleMobileMenu() {
+    // Only toggle on mobile (when arrow is visible)
+    if (window.innerWidth >= 768) return;
+
+    const isHidden = elements.menuItems.classList.contains('hidden');
+    if (isHidden) {
+      elements.menuItems.classList.remove('hidden');
+      elements.menuArrow.textContent = '▲';
+    } else {
+      elements.menuItems.classList.add('hidden');
+      elements.menuArrow.textContent = '▼';
+    }
+  }
+
+  function closeMobileMenu() {
+    if (window.innerWidth < 768) {
+      elements.menuItems.classList.add('hidden');
+      elements.menuArrow.textContent = '▼';
+    }
   }
 
   // Start
