@@ -31,7 +31,7 @@
 <div class="flex gap-4 mb-4">
 <img src="/sebacius.png" alt="Sebastian Sastre" class="w-14 flex-shrink-0 rounded object-contain">
 <div class="text-bbs-text">
-<span class="text-bbs-yellow">AI &amp; VoIP Engineer</span> with <span class="text-bbs-green">20+ years</span>
+<span class="text-bbs-yellow">Principal VoIP AI Engineer</span> with <span class="text-bbs-green">25+ years</span>
 in real-time communications. I lead teams, architect systems, and still
 get hands-on in code and SIP traces when it matters.
 </div>
@@ -45,7 +45,7 @@ and review changes behind human merge gates.
 </div>
 
 <div class="text-bbs-text mb-4">
-Underneath it all is two decades of carrier-grade voice, on platforms handling
+Underneath it all is 25 years of carrier-grade voice, on platforms handling
 <span class="text-bbs-cyan">500K+ devices</span> and <span class="text-bbs-cyan">billions of minutes</span>. My voice agents are
 built for the PSTN, not for the demo.
 </div>
@@ -175,7 +175,7 @@ For complete history, visit my LinkedIn or type 'F' to find me.
 
     career: `
 <div class="text-bbs-text mb-4">
-Two decades in telecom. I've worn many hats: tech lead, developer, project
+25 years in telecom. I've worn many hats: tech lead, developer, project
 manager—sometimes all three at once. Part of teams that built successful
 enterprises from the ground up, working with product owners to shape
 solutions meant to last.
@@ -229,7 +229,7 @@ and agentic software delivery. Press <span class="text-bbs-cyan">'I'</span> for 
 <div class="text-bbs-cyan font-bold mb-4">AI Lab</div>
 
 <div class="text-bbs-text mb-4">
-Current work. Two decades of telecom taught me that demos are easy and
+Current work. 25 years of telecom taught me that demos are easy and
 production is hard. AI is no different, so I build it like production
 infrastructure.
 </div>
