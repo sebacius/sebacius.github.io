@@ -12,6 +12,7 @@
 
   const menuItems = [
     { key: 'A', label: 'About Me', section: 'about' },
+    { key: 'I', label: 'AI Lab', section: 'ai' },
     { key: 'C', label: 'Career', section: 'career' },
     { key: 'P', label: 'PCAP', section: 'experience' },
     { key: 'S', label: 'Skills', section: 'skills' },
@@ -30,35 +31,56 @@
 <div class="flex gap-4 mb-4">
 <img src="/sebacius.png" alt="Sebastian Sastre" class="w-14 flex-shrink-0 rounded object-contain">
 <div class="text-bbs-text">
-<span class="text-bbs-yellow">VoIP Engineer</span> with <span class="text-bbs-green">20+ years</span>
+<span class="text-bbs-yellow">AI &amp; VoIP Engineer</span> with <span class="text-bbs-green">20+ years</span>
 in telecom. I lead teams, architect systems, and still get my hands dirty
 in code and SIP traces when it matters.
 </div>
 </div>
 
 <div class="text-bbs-text mb-4">
-I build cloud-native voice infrastructure at scale. Currently driving architecture
-for platforms handling <span class="text-bbs-cyan">500K+ devices</span> and <span class="text-bbs-cyan">billions of minutes</span>.
-Now integrating AI into real-time voice—where traditional telephony meets
-intelligent automation.
+These days I spend most of my time on AI. I build <span class="text-bbs-cyan">voice AI agents</span>
+that talk over real phone lines, and I build a <span class="text-bbs-cyan">software factory</span>:
+AI coding agents that plan, write, review and ship code, guided by
+skills, plugins and evals.
+</div>
+
+<div class="text-bbs-text mb-4">
+Underneath it all is two decades of real-time voice. I architect cloud-native
+platforms handling <span class="text-bbs-cyan">500K+ devices</span> and <span class="text-bbs-cyan">billions of minutes</span>,
+so I know what it takes for an AI agent to survive a real phone call.
 </div>
 
 <div class="text-bbs-yellow mb-2">What I Bring:</div>
 <div class="text-bbs-text ml-4 mb-4">
-  <span class="text-bbs-green">></span> Deep protocol expertise—Kamailio, FreeSWITCH, SIP inside and out<br>
-  <span class="text-bbs-green">></span> Cloud-native architecture at national scale<br>
-  <span class="text-bbs-green">></span> Technical leadership with a bias for shipping<br>
+  <span class="text-bbs-green">></span> Voice AI agents on real telephony: Pipecat, STT, LLMs, TTS over SIP/RTP<br>
+  <span class="text-bbs-green">></span> Agentic engineering: Claude Code skills, plugins, subagents and evals<br>
+  <span class="text-bbs-green">></span> Deep protocol expertise: Kamailio, FreeSWITCH, SIP inside and out<br>
+  <span class="text-bbs-green">></span> Cloud-native architecture at national scale on AWS, GCP and Kubernetes<br>
   <span class="text-bbs-green">></span> The rare engineer who reads SIP traces for fun
 </div>
 
 <div class="text-bbs-muted">
-From calling cards to AI-driven voice platforms—I've seen telecom evolve
-and helped build what comes next.
+From calling cards to AI agents that answer the phone, I've seen telecom
+evolve and I'm helping build what comes next.
 </div>
 `,
 
     skills: `
 <div class="text-bbs-cyan font-bold mb-4">Technical Skills</div>
+
+<div class="text-bbs-yellow mb-2">AI Engineering</div>
+<div class="text-bbs-text ml-4 mb-4">
+  Claude Code, skills, plugins, subagents, MCP servers<br>
+  Evals, agentic workflows, AI software factory<br>
+  Claude, ChatGPT, Gemini, Ollama, LangChain, OpenAI API
+</div>
+
+<div class="text-bbs-yellow mb-2">Voice AI</div>
+<div class="text-bbs-text ml-4 mb-4">
+  <span class="text-bbs-green">Pipecat</span> voice agents over SIP/RTP and WebRTC<br>
+  Whisper, Deepgram, ElevenLabs. STT → LLM → TTS pipelines<br>
+  <span class="text-bbs-muted">Latency, turn-taking and interruptions: the hard parts are telephony.</span>
+</div>
 
 <div class="text-bbs-yellow mb-2">VoIP & Telecom</div>
 <div class="text-bbs-text ml-4 mb-4">
@@ -73,12 +95,6 @@ and helped build what comes next.
   <span class="text-bbs-muted">I read SIP traces for fun.</span>
 </div>
 
-<div class="text-bbs-yellow mb-2">AI & Voice AI</div>
-<div class="text-bbs-text ml-4 mb-4">
-  ChatGPT, Claude, Gemini, Claude Code, Ollama, Pipecat<br>
-  Whisper, Deepgram, ElevenLabs, LangChain, OpenAI API
-</div>
-
 <div class="text-bbs-yellow mb-2">Languages</div>
 <div class="text-bbs-text ml-4 mb-4">
   <span class="text-bbs-green">Go</span> (primary), Python, C, PHP, Perl, Bash, JavaScript, Lua<br>
@@ -88,8 +104,8 @@ and helped build what comes next.
 
 <div class="text-bbs-yellow mb-2">Infrastructure & DevOps</div>
 <div class="text-bbs-text ml-4 mb-4">
-  Kubernetes, Docker, Terraform, Ansible, ArgoCD<br>
-  GCP, AWS, DigitalOcean
+  <span class="text-bbs-green">AWS</span>, GCP, DigitalOcean<br>
+  Kubernetes, Docker, Terraform, Ansible, ArgoCD
 </div>
 
 <div class="text-bbs-yellow mb-2">Observability</div>
@@ -121,7 +137,7 @@ and helped build what comes next.
 <div class="mb-6">
   <div class="text-bbs-yellow font-bold">Senior SIP Engineer</div>
   <div class="text-bbs-cyan">Great HealthWorks</div>
-  <div class="text-bbs-muted text-sm mb-2">Jan 2016 - Nov 2019 · 3 yrs 10 mos</div>
+  <div class="text-bbs-muted text-sm mb-2">Jan 2017 - Nov 2019 · 2 yrs 10 mos</div>
   <div class="text-bbs-text ml-4">
     Built WebRTC softphone-based call center for customer support—supervisor
     modules, HIPAA-compliant. Carrier-grade reliability. Replaced legacy
@@ -166,11 +182,20 @@ solutions meant to last.
 <div class="text-bbs-yellow mb-2">Key Areas of Focus:</div>
 
 <div class="mb-5">
-  <div class="text-bbs-green font-bold">AI-Driven Voice Infrastructure</div>
+  <div class="text-bbs-green font-bold">Voice AI Agents</div>
   <div class="text-bbs-text ml-4">
-    Integrating AI into real-time voice systems—bridging the gap between
-    traditional telephony and intelligent automation. AI woven into the
-    architecture, not bolted on.
+    AI agents that answer and make real phone calls. Pipecat pipelines wired
+    into SIP and RTP, with STT, LLM and TTS tuned for low latency. AI woven
+    into the voice architecture, not bolted on.
+  </div>
+</div>
+
+<div class="mb-5">
+  <div class="text-bbs-green font-bold">AI Software Factory</div>
+  <div class="text-bbs-text ml-4">
+    Treating AI coding agents as an engineering team: specialized agents,
+    reusable skills and plugins, isolated worktrees, and evals that check
+    the output before it ships.
   </div>
 </div>
 
@@ -211,6 +236,55 @@ solutions meant to last.
 </div>
 `,
 
+    ai: `
+<div class="text-bbs-cyan font-bold mb-4">AI Lab</div>
+
+<div class="text-bbs-text mb-4">
+What I'm building right now. Twenty years of telecom taught me that
+demos are easy and production is hard. The same is true for AI.
+</div>
+
+<div class="mb-5">
+  <div class="text-bbs-green font-bold">Voice AI Agents</div>
+  <div class="text-bbs-text ml-4">
+    Conversational agents built with <span class="text-bbs-cyan">Pipecat</span> that live on real
+    phone lines. SIP and RTP in, STT → LLM → TTS out. The hard parts
+    are the telephony ones: latency budgets, barge-in, turn-taking, codecs
+    and calls that need to hand off to a human.
+  </div>
+</div>
+
+<div class="mb-5">
+  <div class="text-bbs-green font-bold">Software Factory</div>
+  <div class="text-bbs-text ml-4">
+    A pipeline of AI coding agents that takes work from plan to merged code.
+    Specialized agents for architecture, backend, docs and review, each
+    working in its own git worktree.
+  </div>
+</div>
+
+<div class="mb-5">
+  <div class="text-bbs-green font-bold">Skills &amp; Plugins</div>
+  <div class="text-bbs-text ml-4">
+    Packaging hard-won know-how as <span class="text-bbs-cyan">Claude Code</span> skills, plugins
+    and MCP servers, so agents work like a senior teammate instead of
+    a fast intern.
+  </div>
+</div>
+
+<div class="mb-5">
+  <div class="text-bbs-green font-bold">Evals</div>
+  <div class="text-bbs-text ml-4">
+    If you can't measure it, you can't ship it. Eval suites that keep
+    agents and prompts honest as models and code change.
+  </div>
+</div>
+
+<div class="text-bbs-muted">
+Want to talk voice AI or agentic engineering? Press 'F' to find me.
+</div>
+`,
+
     contact: `
 <div class="text-bbs-cyan font-bold mb-4">Contact Information</div>
 
@@ -230,8 +304,8 @@ solutions meant to last.
 </div>
 
 <div class="text-bbs-muted mt-6">
-Whether you need help architecting a VoIP system, optimizing
-call quality, or building a telecom platform from scratch -
+Whether you're putting AI agents on the phone, building an agentic
+engineering workflow, or architecting a VoIP platform from scratch,
 let's talk.
 </div>
 `,
@@ -250,6 +324,7 @@ let's talk.
 <div class="text-bbs-yellow mb-2">Available Sections</div>
 <div class="text-bbs-text ml-4 mb-4">
   <span class="text-bbs-cyan">[A]</span> About Me<br>
+  <span class="text-bbs-cyan">[I]</span> AI Lab<br>
   <span class="text-bbs-cyan">[C]</span> Career<br>
   <span class="text-bbs-cyan">[P]</span> PCAP - Work history<br>
   <span class="text-bbs-cyan">[S]</span> Skills<br>
@@ -263,7 +338,7 @@ let's talk.
 </div>
 
 <div class="text-bbs-muted">
-Built with vanilla JavaScript and Tailwind CSS.
+Built with vanilla JavaScript and Tailwind CSS, with help from AI agents.
 </div>
 `
   };
@@ -292,7 +367,8 @@ Built with vanilla JavaScript and Tailwind CSS.
     { text: 'CONNECT 28800/ARQ/V34/LAPM/V42BIS', delay: 1400, class: 'text-green-400' },
     { text: '', delay: 1800 },
     { text: 'Establishing secure connection...', delay: 2000, class: 'text-cyan-400' },
-    { text: 'Connected to Sebastian Sastre\'s BBS', delay: 2500, class: 'text-yellow-400' },
+    { text: 'Waking up AI sysop... OK', delay: 2300, class: 'text-cyan-400' },
+    { text: 'Connected to Sebastian Sastre\'s BBS', delay: 2600, class: 'text-yellow-400' },
     { text: '', delay: 2800 },
     { text: 'Press Enter or tap to continue...', delay: 3200, class: 'text-gray-500 blink' },
   ];
@@ -392,6 +468,7 @@ Built with vanilla JavaScript and Tailwind CSS.
     // Map section keys to display titles
     const titles = {
       about: 'About Me',
+      ai: 'AI Lab',
       career: 'Career',
       experience: 'PCAP',
       skills: 'Skills',

@@ -1,11 +1,11 @@
 {
-  "name": "Sebastian Sastre | Terminal",
+  "name": "Sebastian Sastre's BBS",
   "short_name": "Sebastian",
-  "description": "Principal VoIP Engineer - Terminal Portfolio",
+  "description": "AI & VoIP Engineer - BBS-style portfolio",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "background_color": "#0c0c18",
+  "theme_color": "#0c0c18",
   "lang": "en",
   "scope": "/",
   "icons": [
