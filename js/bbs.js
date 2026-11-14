@@ -52,8 +52,9 @@ built for the PSTN, not for the demo.
 
 <div class="text-bbs-yellow mb-2">What I Bring:</div>
 <div class="text-bbs-text ml-4 mb-4">
-  <span class="text-bbs-green">></span> Production voice AI: Pipecat agents over SIP and WebRTC, tuned for latency and turn-taking<br>
+  <span class="text-bbs-green">></span> Production voice AI: Pipecat agents over SIP and WebRTC on Deepgram, Amazon Bedrock and Google Vertex AI<br>
   <span class="text-bbs-green">></span> Agentic engineering: spec-driven agent pipelines and harnesses built on Claude Code skills, plugins and MCP<br>
+  <span class="text-bbs-green">></span> AIOps for voice: real-time SIP/RTP analysis that catches call-quality issues before customers report them<br>
   <span class="text-bbs-green">></span> Carrier-grade VoIP: Kamailio, FreeSWITCH, SIP inside and out<br>
   <span class="text-bbs-green">></span> Cloud-native architecture at national scale on AWS, GCP and Kubernetes
 </div>
@@ -71,7 +72,8 @@ evolve, and I'm building what comes next.
 <div class="text-bbs-text ml-4 mb-4">
   Agentic workflows, multi-agent orchestration, spec-driven development<br>
   Harness &amp; context engineering: Claude Code skills, plugins, subagents, MCP servers, evals<br>
-  Claude, GPT, Gemini, Ollama, LangChain, OpenAI API
+  Amazon Bedrock, Google Vertex AI, OpenAI API, Ollama, LangChain<br>
+  Claude, GPT, Gemini
 </div>
 
 <div class="text-bbs-yellow mb-2">Voice AI</div>
@@ -91,6 +93,7 @@ evolve, and I'm building what comes next.
 <div class="text-bbs-yellow mb-2">SIP Analysis & Debugging</div>
 <div class="text-bbs-text ml-4 mb-4">
   sngrep, tshark, Wireshark, Homer<br>
+  AI-assisted SIP/RTP analysis, call-quality anomaly detection<br>
   <span class="text-bbs-muted">I read SIP traces for fun.</span>
 </div>
 
@@ -178,26 +181,12 @@ enterprises from the ground up, working with product owners to shape
 solutions meant to last.
 </div>
 
+<div class="text-bbs-text mb-4">
+Today all of that feeds into AI: voice agents, AIOps for voice networks
+and agentic software delivery. Press <span class="text-bbs-cyan">'I'</span> for the AI Lab.
+</div>
+
 <div class="text-bbs-yellow mb-2">Key Areas of Focus:</div>
-
-<div class="mb-5">
-  <div class="text-bbs-green font-bold">Production Voice AI</div>
-  <div class="text-bbs-text ml-4">
-    Real-time voice agents that handle live phone calls, built with Pipecat
-    and wired into SIP/RTP infrastructure. Streaming STT, LLM and TTS tuned
-    to a tight latency budget, with interruption handling and escalation to
-    human agents. AI woven into the voice architecture, not bolted on.
-  </div>
-</div>
-
-<div class="mb-5">
-  <div class="text-bbs-green font-bold">Agentic Software Delivery</div>
-  <div class="text-bbs-text ml-4">
-    An agentic software factory: spec-driven pipelines where specialized
-    coding agents plan, implement, test and review changes in isolated
-    worktrees, with automated verification and human merge gates.
-  </div>
-</div>
 
 <div class="mb-5">
   <div class="text-bbs-green font-bold">Enterprise VoIP Infrastructure</div>
@@ -249,10 +238,21 @@ infrastructure.
   <div class="text-bbs-green font-bold">Production Voice AI</div>
   <div class="text-bbs-text ml-4">
     Real-time conversational agents built with <span class="text-bbs-cyan">Pipecat</span> and deployed
-    on real phone lines over SIP and WebRTC. Streaming STT → LLM → TTS
+    on real phone lines over SIP and WebRTC, using Deepgram for speech and
+    models served through Amazon Bedrock and Google Vertex AI. Streaming STT → LLM → TTS
     under a strict latency budget. The hard problems are telephony problems:
     turn detection, barge-in, codecs, jitter, and a warm transfer to a human
     when the agent should step aside.
+  </div>
+</div>
+
+<div class="mb-5">
+  <div class="text-bbs-green font-bold">AIOps for Voice</div>
+  <div class="text-bbs-text ml-4">
+    AI applied to the network itself. Real-time analysis of SIP signaling
+    and RTP streams flags jitter, packet loss, one-way audio and failing
+    call flows as they emerge, then correlates them to a likely root cause.
+    Problems get resolved before they turn into tickets, not after.
   </div>
 </div>
 
