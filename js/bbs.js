@@ -31,7 +31,7 @@
 <div class="flex gap-4 mb-4">
 <img src="/sebacius.png" alt="Sebastian Sastre" class="w-14 flex-shrink-0 rounded object-contain">
 <div class="text-bbs-text">
-<span class="text-bbs-yellow">Voice AI VoIP Engineer</span> with <span class="text-bbs-green">20+ years</span>
+<span class="text-bbs-yellow">AI &amp; VoIP Engineer</span> with <span class="text-bbs-green">20+ years</span>
 in telecom. I lead teams, architect systems, and still get my hands dirty
 in code and SIP traces when it matters.
 </div>
