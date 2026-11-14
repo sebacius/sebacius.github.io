@@ -45,12 +45,6 @@ and review changes behind human merge gates.
 </div>
 
 <div class="text-bbs-text mb-4">
-I treat AI like any other production system: harness and context
-engineering to steer the agents, and evals with regression gates to
-prove they work before anything ships.
-</div>
-
-<div class="text-bbs-text mb-4">
 Underneath it all is two decades of carrier-grade voice, on platforms handling
 <span class="text-bbs-cyan">500K+ devices</span> and <span class="text-bbs-cyan">billions of minutes</span>. My voice agents are
 built for the PSTN, not for the demo.
@@ -59,8 +53,7 @@ built for the PSTN, not for the demo.
 <div class="text-bbs-yellow mb-2">What I Bring:</div>
 <div class="text-bbs-text ml-4 mb-4">
   <span class="text-bbs-green">></span> Production voice AI: Pipecat agents over SIP and WebRTC, tuned for latency and turn-taking<br>
-  <span class="text-bbs-green">></span> Agentic engineering: spec-driven agent pipelines, Claude Code skills, plugins and MCP tooling<br>
-  <span class="text-bbs-green">></span> Evaluation-driven development: golden datasets, LLM-as-judge, regression gates<br>
+  <span class="text-bbs-green">></span> Agentic engineering: spec-driven agent pipelines and harnesses built on Claude Code skills, plugins and MCP<br>
   <span class="text-bbs-green">></span> Carrier-grade VoIP: Kamailio, FreeSWITCH, SIP inside and out<br>
   <span class="text-bbs-green">></span> Cloud-native architecture at national scale on AWS, GCP and Kubernetes
 </div>
@@ -77,8 +70,7 @@ evolve, and I'm building what comes next.
 <div class="text-bbs-yellow mb-2">AI Engineering</div>
 <div class="text-bbs-text ml-4 mb-4">
   Agentic workflows, multi-agent orchestration, spec-driven development<br>
-  Harness &amp; context engineering: Claude Code skills, plugins, subagents, MCP servers<br>
-  Evals: golden datasets, LLM-as-judge, regression gates<br>
+  Harness &amp; context engineering: Claude Code skills, plugins, subagents, MCP servers, evals<br>
   Claude, GPT, Gemini, Ollama, LangChain, OpenAI API
 </div>
 
@@ -279,17 +271,9 @@ infrastructure.
   <div class="text-bbs-text ml-4">
     The system around the model matters as much as the model. I package
     domain expertise as <span class="text-bbs-cyan">Claude Code</span> skills, plugins and MCP servers
-    that give agents the right context, tools and guardrails, so they
-    perform like senior engineers rather than fast interns.
-  </div>
-</div>
-
-<div class="mb-5">
-  <div class="text-bbs-green font-bold">Evals</div>
-  <div class="text-bbs-text ml-4">
-    Evaluation-driven development: golden datasets, LLM-as-judge scoring
-    and regression gates that run on every prompt, harness and model
-    change. If it isn't measured, it doesn't ship.
+    that give agents the right context, tools and guardrails, with evals
+    keeping them honest as models change. The goal: agents that work like
+    senior engineers, not fast interns.
   </div>
 </div>
 
